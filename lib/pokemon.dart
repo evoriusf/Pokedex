@@ -8,8 +8,6 @@ class Poke {
   factory Poke.fromJson(Map<String, dynamic> data) {
     return Poke(name: data["name"], url: data["url"]);
   }
-
-  Map<String, dynamic> toJson() => {"name": name, "url": url};
 }
 
 class Species {
@@ -19,8 +17,6 @@ class Species {
 
   factory Species.fromJson(Map<String, dynamic> data) =>
       Species(name: data["name"], url: data["url"]);
-
-  Map<String, dynamic> toJson() => {"name": name, "url": url};
 }
 
 class Pokemons {
@@ -98,6 +94,4 @@ class Sprites {
 
   factory Sprites.fromJson(Map<String, dynamic> data) =>
       Sprites(frontDefault: data["front_default"]);
-
-  Map<String, dynamic> toJson() => {"front_default": frontDefault};
 }
